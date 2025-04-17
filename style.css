@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Default color for light mode */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#thermochemical-output {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#chem-meme {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+.dark-mode h1 {
+    color: #f9f9f9; /* Adjust header color in dark mode */
+}
+
+.dark-mode input, .dark-mode button {
+    border: 1px solid #444;
+    background-color: #666;
+    color: #fff;
+}
+
+.dark-mode button:hover {
+    background-color: #5A5A5A;
+}
+
+@media (max-width: 768px) {
+    canvas {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
